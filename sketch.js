@@ -90,7 +90,7 @@ function keyPressed(){
     }
 }
 async function getTime() {
-    var answer = await fetch("https://worldtimeapi.org/api/timezone/Asia/Kolkata");
+    var answer = await fetch("http://worldtimeapi.org/api/timezone/America/Los_Angeles");
     var answerJSON = await answer.json();
     var dateTime = answerJSON.datetime;
     var hour = dateTime.slice(11, 13); 
